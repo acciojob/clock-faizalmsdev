@@ -15,10 +15,7 @@ function updateDateTime() {
 }
 
 function formatDateTimeComponent(component) {
-  if (component < 10) {
-    return "0" + component;
-  }
-  return component;
+  return component.toString().padStart(2, "0");
 }
 
 // Call updateDateTime() initially to display the current date and time
